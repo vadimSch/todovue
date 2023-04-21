@@ -1,0 +1,77 @@
+@import "vars.scss";
+
+html {
+    line-height: $mainLineHeight;
+    font-size: $mainFontSize;
+    color: $mainFontColor;
+    height: 100%;
+    @media screen and (max-width: $desktopWidth) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: $tableWidth) {
+        font-size: 15px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+        font-size: 14px;
+    }
+}
+
+body {
+    font-family: $mainFont;
+    font-weight: $mainFontWeight;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smothing: grayscale;
+    margin: 0;
+    padding: 0;
+    background-color: #040404;
+}
+
+ul, li {
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+}
+
+section, .section {
+    position: relative;
+    padding: 40px 0;
+    @media screen and (max-width: $desktopWidth) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: $tableWidth) {
+        font-size: 15px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+        font-size: 14px;
+    } 
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    flex: 0 0 auto;
+    position: relative;
+    max-width: $desktopWidth;
+    margin: 0;
+    @media screen and (max-width: $desktopWidth) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: $tableWidth) {
+        font-size: 15px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+        font-size: 14px;
+    } 
+}
